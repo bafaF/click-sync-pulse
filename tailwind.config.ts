@@ -80,10 +80,45 @@ export default {
             height: "0",
           },
         },
+        "pulse-scale": {
+          "0%, 100%": {
+            transform: "scale(1)",
+          },
+          "50%": {
+            transform: "scale(1.05)",
+          },
+        },
+        "click-bounce": {
+          "0%, 100%": {
+            transform: "scale(1)",
+          },
+          "25%": {
+            transform: "scale(0.95)",
+          },
+          "50%": {
+            transform: "scale(1.1)",
+          },
+          "75%": {
+            transform: "scale(0.98)",
+          },
+        },
+        "count-up": {
+          "0%": {
+            transform: "translateY(10px)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-scale": "pulse-scale 2s ease-in-out infinite",
+        "click-bounce": "click-bounce 0.4s ease-out",
+        "count-up": "count-up 0.3s ease-out",
       },
     },
   },
